@@ -101,6 +101,23 @@ Données **inventées**, stockées dans un fichier JSON local (~20 fiches).
 
 | | |
 | --- | --- |
-| Relu par | _(nom du binôme)_ |
-| Date | _(à compléter)_ |
-| Remarques | _(à compléter)_ |
+| Relu par | Kevin |
+| Date | 02.10.2026 |
+| Avis global | Brief solide, prêt pour commencer le code après les corrections 1 à 4. |
+
+**Points forts**
+- Le problème est clair et concret : on part du frigo, pas d'un nom de plat.
+- Le périmètre est bien découpé (Must / Should / Could) et la liste « Exclus » évite que le projet grossisse.
+- L'exemple de fiche JSON aide à comprendre la structure des données.
+- Le planning sur 4 semaines est réaliste.
+
+**À corriger**
+1. **Ingrédients de base** : sel, poivre, huile, eau vont compter comme « manquants » partout. Décider s'ils sont considérés comme toujours présents.
+2. **Orthographe des ingrédients** : « courgette » et « Courgettes » doivent être reconnus comme identiques. Préciser la comparaison (minuscules, sans accents, singulier).
+3. **Autocomplétion** : préciser d'où viennent les suggestions (liste d'ingrédients dédiée ou tirée des fiches recettes).
+4. **Critère « hors connexion »** : absent du périmètre et du planning. L'ajouter en « Could » ou l'enlever.
+5. **Seulement 20 recettes** : risque fréquent de « aucune recette trouvée ». Prévoir 30 à 40 fiches ou des ingrédients très courants.
+
+**Questions**
+- À pourcentage égal, quelle recette s'affiche en premier ? La plus rapide ?
+- La semaine 4 (design, accessibilité, tests, corrections) n'est-elle pas trop chargée ?
