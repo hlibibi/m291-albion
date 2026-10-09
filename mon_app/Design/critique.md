@@ -80,4 +80,8 @@ C'est celle qui sert le mieux le **message** (anti-gaspi, fraîcheur) et la **t�
 | Texte secondaire | `#5E6F63` |
 | Tags | `#E3F4E9` |
 
-Police : **Inter** (400 / 600 / 800) · rayons 16 px · zones tactiles ≥ 44 px.
+Police : **Inter** (400 / 600 / 800) · rayons 16 px · zones tactiles ≥ 48 × 48 px.
+
+### Résultat
+
+Le design final, avec la palette ajustée et les correctifs issus de la revue et du test utilisateur, est visible dans [`design-final.png`](design-final.png).

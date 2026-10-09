@@ -1,7 +1,7 @@
 # Brief — CuisineDuFrigo
 
 > Fichier de spécification officiel du projet M291.
-> Auteur : Albion (SM-C2b) · Version 1.0 · 02.10.2026
+> Auteur : Albion (SM-C2b)
 
 ## 1. Le projet en une phrase
 
@@ -27,13 +27,15 @@ Entrer une liste d'ingrédients → voir les recettes possibles → ouvrir une r
 
 | Priorité | Fonctionnalité |
 | --- | --- |
-| Must | Saisie d'ingrédients sous forme de tags (ajout / suppression) |
+| Must | Saisie d'ingrédients sous forme de tags : champ + bouton « + » (48 × 48 px), validation par Entrée, plusieurs ingrédients d'un coup séparés par des virgules |
 | Must | Filtrage des recettes selon les ingrédients saisis |
-| Must | Tri par pourcentage d'ingrédients possédés + badge « il manque X » |
-| Must | Fiche détail : ingrédients (possédés / manquants), temps, étapes |
-| Should | Suggestions pendant la saisie (autocomplétion) |
+| Must | Tri par pourcentage d'ingrédients possédés, puis par temps de préparation (le plus rapide d'abord) en cas d'égalité |
+| Must | Badge sur chaque carte : « Tout est là ✓ » ou « Il manque : ail » (nom de l'ingrédient manquant) |
+| Must | Fiche détail : ingrédients (possédés / à acheter), temps, étapes |
+| Should | Suggestions pendant la saisie (autocomplétion dès 2 lettres) |
 | Should | Favoris (stockés en local dans le navigateur) |
 | Could | Filtre par temps de préparation (< 15 min, < 30 min) |
+| Could | Fonctionnement hors connexion une fois l'app chargée |
 
 ### Exclus (hors projet)
 
@@ -45,57 +47,69 @@ Entrer une liste d'ingrédients → voir les recettes possibles → ouvrir une r
 
 ## 6. Données
 
-Données **inventées**, stockées dans un fichier JSON local (~20 fiches).
+Données **inventées**, stockées dans des fichiers JSON locaux.
+
+- **`recettes.json`** : **30 à 40 fiches**, construites surtout avec des ingrédients courants (pâtes, riz, œufs, poulet, tomate, oignon, fromage…) pour limiter les cas « aucune recette trouvée ».
+- **`ingredients.json`** : liste de référence des ingrédients, générée à partir des fiches. Elle sert aux **suggestions** pendant la saisie.
 
 ```json
 {
   "id": 1,
-  "nom": "Pâtes poulet-courgette",
-  "temps": 20,
+  "nom": "Pâtes poulet-tomate",
+  "temps": 15,
   "difficulte": "facile",
-  "ingredients": ["pâtes", "poulet", "courgette", "ail", "huile d'olive"],
+  "ingredients": ["pâtes", "poulet", "tomate", "ail"],
   "etapes": [
-    "Cuire les pâtes.",
-    "Couper le poulet et la courgette en dés.",
-    "Faire revenir le tout avec l'ail dans l'huile.",
+    "Cuire les pâtes 10 min.",
+    "Couper le poulet en dés et le saisir.",
+    "Ajouter la tomate et l'ail.",
     "Mélanger avec les pâtes."
   ]
 }
 ```
 
+### Règles de comparaison des ingrédients
+
+- **Ingrédients de base** : sel, poivre, huile, eau, sucre et farine sont **toujours considérés comme présents**. Ils n'apparaissent jamais comme « manquants » et sont listés à part sur la fiche (« + sel, poivre, huile »).
+- **Normalisation** avant comparaison : minuscules, sans accents, au singulier, espaces supprimés (« Courgettes » = « courgette »).
+- **Ingrédient inconnu** : ajouté quand même en tag, la recherche continue avec les autres.
+
 ## 7. Écrans
 
 | Code | Écran | Rôle |
 | --- | --- | --- |
-| E1 | Accueil | Point d'entrée, bouton principal |
+| E1 | Accueil | Point d'entrée, titre « Cuisine avec ce que tu as déjà », bouton principal |
 | E2 | Mon frigo | Saisie des ingrédients |
 | E3 | Résultats | Liste des recettes filtrées |
 | E4 | Détail recette | Ingrédients + étapes + favori |
 | E5 | Favoris | Recettes enregistrées |
 
-→ Wireframes : [`mon_app/Design/wireframes/`](mon_app/Design/wireframes/)
+→ Wireframes : [`mon_app/Design/wireframes/`](mon_app/Design/wireframes/) · Design final : [`mon_app/Design/design-final.png`](mon_app/Design/design-final.png)
 
 ## 8. Contraintes
 
 - **Mobile first** (360–414 px), utilisable à une main.
 - Technologies : HTML, CSS, JavaScript (pas de framework imposé).
-- Accessibilité : contrastes AA, zones tactiles ≥ 44 px, textes ≥ 16 px.
+- Accessibilité (WCAG 2.2 AA) : contrastes ≥ 4,5:1, **zones tactiles ≥ 48 × 48 px**, textes ≥ 16 px, navigation complète au clavier avec focus visible, `alt` sur les images.
 - Pas de dépendance payante.
+
+→ Audit et tests : [`mon_app/Design/tests-utilisateurs.md`](mon_app/Design/tests-utilisateurs.md)
 
 ## 9. Critères de réussite
 
 - Kevin trouve une recette en **moins de 3 interactions** après la saisie.
-- Il voit **immédiatement** ce qui lui manque.
-- L'app fonctionne hors connexion une fois chargée.
+- Il voit **immédiatement** ce qui lui manque, sans ouvrir la fiche.
+- Au test 5 secondes, l'idée « cuisiner avec ce qu'on a déjà » est comprise.
+- 100 % des textes respectent les contrastes WCAG AA.
 
 ## 10. Planning (4 semaines)
 
 | Semaine | Objectif |
 | --- | --- |
-| 1 | Structure HTML des 5 écrans + données JSON |
-| 2 | Saisie des tags + logique de filtrage |
-| 3 | Fiche détail + favoris + cas limites |
-| 4 | Design final, accessibilité, tests, corrections |
+| 1 | Structure HTML des 5 écrans + données JSON (recettes et ingrédients) |
+| 2 | Saisie des tags (bouton « + », virgules, normalisation) + logique de filtrage et de tri |
+| 3 | Fiche détail + favoris + cas limites + **styles du design final et contrastes** |
+| 4 | Navigation clavier et focus, test utilisateur sur l'app en ligne (s16), corrections |
 
 ## 11. Revue croisée
 
