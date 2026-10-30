@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CuisineDuFrigo — Cuisine avec ce que tu as déjà</title>
+  <meta name="description" content="Trouve une recette avec les ingrédients que tu as déjà dans ton frigo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-site">
+    <a href="index.html" class="logo">CuisineDuFrigo</a>
+    <nav class="nav-site" aria-label="Navigation principale">
+      <a href="index.html" class="lien-nav actif" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v10h6v-6h2v6h6V11h3z"/></svg>
+        Accueil
+      </a>
+      <a href="#" class="lien-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.2 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.8 0 6 3.8 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+        Favoris
+      </a>
+    </nav>
+  </header>
+
+  <main class="contenu-principal">
+    <section class="hero" aria-labelledby="titre-accueil">
+      <svg class="hero-illustration" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="96" fill="#cfebd8"/>
+        <rect x="58" y="38" width="84" height="124" rx="14" fill="#ffffff" stroke="#237a46" stroke-width="5"/>
+        <line x1="58" y1="84" x2="142" y2="84" stroke="#237a46" stroke-width="5"/>
+        <line x1="72" y1="56" x2="72" y2="70" stroke="#237a46" stroke-width="5" stroke-linecap="round"/>
+        <line x1="72" y1="98" x2="72" y2="116" stroke="#237a46" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="86" cy="136" r="11" fill="#f2a93b"/>
+        <circle cx="108" cy="142" r="8" fill="#237a46"/>
+        <circle cx="126" cy="134" r="12" fill="#f2a93b"/>
+      </svg>
+      <div class="hero-texte">
+        <div>
+          <h1 id="titre-accueil">Cuisine avec ce que tu as déjà</h1>
+          <p class="hero-intro">Entre tes ingrédients, on trouve la recette. Zéro gaspi.</p>
+        </div>
+        <a href="#" class="btn-primaire">Qu'est-ce que je cuisine ?</a>
+      </div>
+    </section>
+
+    <section class="section-accueil" aria-labelledby="titre-recentes">
+      <h2 id="titre-recentes">Dernières recherches</h2>
+      <div class="cartes-grille">
+        <article class="carte">
+          <h3 class="visually-hidden">Recherche : pâtes, poulet, tomate</h3>
+          <a href="#" class="lien-carte">
+            <span class="visually-hidden">Relancer la recherche</span>
+            <span class="tags"><span class="tag">pâtes</span><span class="tag">poulet</span><span class="tag">tomate</span></span>
+            <span class="carte-info">8 recettes · hier</span>
+          </a>
+        </article>
+        <article class="carte">
+          <h3 class="visually-hidden">Recherche : œufs, fromage, courgette</h3>
+          <a href="#" class="lien-carte">
+            <span class="visually-hidden">Relancer la recherche</span>
+            <span class="tags"><span class="tag">œufs</span><span class="tag">fromage</span><span class="tag">courgette</span></span>
+            <span class="carte-info">5 recettes · il y a 3 jours</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-site">
+    <p>© 2026 — Albion · CuisineDuFrigo</p>
+  </footer>
+
+</body>
+</html>
