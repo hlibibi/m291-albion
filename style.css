@@ -1,0 +1,338 @@
+/* Design tokens — CuisineDuFrigo */
+:root {
+  /* 60 % fond · 30 % surfaces et texte · 10 % accent */
+  --color-bg: #f6faf5;
+  --color-surface: #ffffff;
+  --color-text: #1b2a20;
+  --color-text-muted: #5e6f63;
+  --color-primary: #237a46;
+  --color-primary-hover: #1a5c35;
+  --color-on-primary: #ffffff;
+  --color-tag: #e3f4e9;
+  --color-accent: #f2a93b;
+  --color-border: #d8e6dc;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --radius-card: 16px;
+  --radius-pill: 999px;
+  --touch-target: 48px;
+  --tabbar-height: 64px;
+  --shadow-sm: 0 1px 3px rgba(27, 42, 32, 0.08);
+  --shadow-hover: 0 10px 20px -6px rgba(27, 42, 32, 0.18);
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding-bottom: var(--tabbar-height);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* En-tête */
+.header-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Navigation : barre d'onglets en bas sur mobile */
+.nav-site {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 10;
+  display: flex;
+  height: var(--tabbar-height);
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.lien-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: var(--touch-target);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.lien-nav svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.lien-nav.actif {
+  color: var(--color-primary);
+}
+
+/* Contenu principal */
+.contenu-principal {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3) var(--space-5);
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: center;
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.hero-texte {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: center;
+  width: 100%;
+}
+
+.hero-illustration {
+  width: 160px;
+  height: 160px;
+}
+
+.hero h1 {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--space-2);
+}
+
+.hero-intro {
+  color: var(--color-text-muted);
+}
+
+.btn-primaire {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  min-height: 56px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: var(--text-base);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primaire:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Titres de section */
+.section-accueil {
+  margin-bottom: var(--space-5);
+}
+
+.section-accueil h2 {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  margin-bottom: var(--space-3);
+}
+
+/* Dernières recherches : grille de cartes — Mobile First */
+.cartes-grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.carte {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.carte:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-hover);
+}
+
+.lien-carte {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: var(--touch-target);
+  padding: 12px var(--space-3);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  padding: var(--space-1) 12px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-tag);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.carte-info {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+/* Pied de page */
+.footer-site {
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Bureau : dès 768 px */
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .header-site {
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-5);
+  }
+
+  .nav-site {
+    position: static;
+    height: auto;
+    gap: var(--space-2);
+    background: none;
+    border: none;
+  }
+
+  .lien-nav {
+    flex: none;
+    flex-direction: row;
+    gap: var(--space-2);
+    padding: 0 var(--space-3);
+    font-size: var(--text-base);
+    border-radius: var(--radius-pill);
+  }
+
+  .lien-nav.actif {
+    background-color: var(--color-tag);
+  }
+
+  .hero {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: start;
+    text-align: left;
+    padding: var(--space-5);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-border);
+  }
+
+  .hero h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .hero-texte {
+    justify-items: start;
+  }
+
+  .hero-illustration {
+    grid-column: 2;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+  }
+
+  .cartes-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Respect de la sensibilité au mouvement */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+  .carte:hover {
+    transform: none;
+  }
+}
