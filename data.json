@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "nom": "Pâtes poulet-tomate",
+    "description": "Un plat complet et rapide pour finir un reste de poulet.",
+    "temps": 15,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": false,
+    "ingredients": ["pâtes", "poulet", "tomate", "ail"],
+    "ingredientsDeBase": ["huile", "sel", "poivre"],
+    "etapes": [
+      "Cuire les pâtes 10 minutes dans l'eau salée.",
+      "Couper le poulet en dés et le saisir à la poêle.",
+      "Ajouter la tomate coupée et l'ail, laisser mijoter 5 minutes.",
+      "Mélanger avec les pâtes égouttées."
+    ],
+    "tags": ["rapide", "anti-gaspi", "étudiant"],
+    "image": "images/pates-poulet-tomate.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Omelette aux restes",
+    "description": "L'omelette qui vide le frigo en dix minutes.",
+    "temps": 10,
+    "difficulte": "facile",
+    "portions": 1,
+    "estVegetarien": true,
+    "ingredients": ["œuf", "fromage", "courgette"],
+    "ingredientsDeBase": ["huile", "sel", "poivre"],
+    "etapes": [
+      "Couper la courgette en petits dés et la faire revenir 3 minutes.",
+      "Battre les œufs avec le fromage râpé.",
+      "Verser sur la courgette et cuire à feu doux jusqu'à ce que ce soit pris."
+    ],
+    "tags": ["rapide", "anti-gaspi", "végétarien"],
+    "image": "images/omelette-aux-restes.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Riz sauté aux légumes",
+    "description": "Le riz de la veille devient un vrai repas.",
+    "temps": 20,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["riz", "oignon", "carotte", "œuf"],
+    "ingredientsDeBase": ["huile", "sel"],
+    "etapes": [
+      "Cuire le riz s'il n'est pas déjà cuit.",
+      "Faire revenir l'oignon et la carotte en dés 5 minutes.",
+      "Ajouter le riz et faire sauter 3 minutes.",
+      "Pousser le riz sur le côté, brouiller les œufs puis tout mélanger."
+    ],
+    "tags": ["anti-gaspi", "végétarien", "asiatique"],
+    "image": "images/riz-saute-aux-legumes.jpg"
+  },
+  {
+    "id": 4,
+    "nom": "Papet vaudois",
+    "description": "Le grand classique vaudois aux poireaux et à la saucisse aux choux.",
+    "temps": 50,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": false,
+    "ingredients": ["poireau", "pomme de terre", "saucisse aux choux", "crème"],
+    "ingredientsDeBase": ["beurre", "sel", "poivre"],
+    "etapes": [
+      "Émincer les poireaux et les faire suer au beurre 10 minutes.",
+      "Ajouter les pommes de terre en cubes et couvrir d'eau.",
+      "Poser la saucisse dessus et cuire 40 minutes à couvert.",
+      "Ajouter la crème et rectifier l'assaisonnement."
+    ],
+    "tags": ["suisse romande", "hiver", "terroir"],
+    "image": "images/papet-vaudois.jpg"
+  },
+  {
+    "id": 5,
+    "nom": "Croûte au fromage",
+    "description": "Le plat de montagne qui sauve le pain rassis.",
+    "temps": 20,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["pain", "fromage", "lait", "œuf"],
+    "ingredientsDeBase": ["poivre"],
+    "etapes": [
+      "Préchauffer le four à 220 °C.",
+      "Tremper les tranches de pain dans le lait.",
+      "Les couvrir de fromage râpé et cuire 12 minutes au four.",
+      "Servir avec un œuf au plat par-dessus."
+    ],
+    "tags": ["suisse romande", "anti-gaspi", "végétarien"],
+    "image": "images/croute-au-fromage.jpg"
+  }
+]
