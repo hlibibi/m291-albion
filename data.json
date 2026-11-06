@@ -92,5 +92,507 @@
     ],
     "tags": ["suisse romande", "anti-gaspi", "végétarien"],
     "image": "images/croute-au-fromage.jpg"
+  },
+  {
+    "id": 6,
+    "nom": "Gratin de pâtes",
+    "description": "Des pâtes gratinées pour utiliser crème et fromage.",
+    "temps": 30,
+    "difficulte": "facile",
+    "portions": 3,
+    "estVegetarien": false,
+    "ingredients": ["pâtes", "jambon", "crème", "fromage"],
+    "ingredientsDeBase": ["sel", "poivre"],
+    "etapes": [
+      "Préchauffer le four à 200 °C.",
+      "Cuire les pâtes 8 minutes et les égoutter.",
+      "Mélanger avec le jambon en dés et la crème dans un plat.",
+      "Couvrir de fromage et gratiner 15 minutes."
+    ],
+    "tags": ["four", "étudiant", "réconfort"],
+    "image": "images/gratin-de-pates.jpg"
+  },
+  {
+    "id": 7,
+    "nom": "Poulet basquaise",
+    "description": "Du poulet mijoté aux poivrons et à la tomate.",
+    "temps": 40,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": false,
+    "ingredients": ["poulet", "poivron", "tomate", "oignon", "ail"],
+    "ingredientsDeBase": ["huile", "sel", "poivre"],
+    "etapes": [
+      "Dorer le poulet dans l'huile puis le réserver.",
+      "Faire revenir l'oignon, l'ail et les poivrons en lanières.",
+      "Ajouter les tomates et remettre le poulet.",
+      "Laisser mijoter 25 minutes à couvert."
+    ],
+    "tags": ["mijoté", "famille"],
+    "image": "images/poulet-basquaise.jpg"
+  },
+  {
+    "id": 8,
+    "nom": "Pasta al pomodoro",
+    "description": "La sauce tomate maison la plus simple qui soit.",
+    "temps": 20,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["pâtes", "tomate", "ail", "basilic"],
+    "ingredientsDeBase": ["huile", "sel"],
+    "etapes": [
+      "Faire revenir l'ail dans l'huile 1 minute.",
+      "Ajouter les tomates et cuire 10 minutes.",
+      "Cuire les pâtes pendant ce temps.",
+      "Mélanger et finir avec le basilic."
+    ],
+    "tags": ["rapide", "végétarien", "italien"],
+    "image": "images/pasta-al-pomodoro.jpg"
+  },
+  {
+    "id": 9,
+    "nom": "Rösti",
+    "description": "Des pommes de terre râpées croustillantes, à la suisse.",
+    "temps": 30,
+    "difficulte": "moyen",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["pomme de terre", "oignon"],
+    "ingredientsDeBase": ["beurre", "sel"],
+    "etapes": [
+      "Râper les pommes de terre et l'oignon, bien les presser.",
+      "Faire fondre le beurre dans une poêle.",
+      "Tasser la préparation et cuire 12 minutes par face à feu moyen."
+    ],
+    "tags": ["suisse", "végétarien", "terroir"],
+    "image": "images/rosti.jpg"
+  },
+  {
+    "id": 10,
+    "nom": "Filets de perche au citron",
+    "description": "Le poisson du Léman, poêlé au beurre et au citron.",
+    "temps": 20,
+    "difficulte": "moyen",
+    "portions": 2,
+    "estVegetarien": false,
+    "ingredients": ["filet de perche", "citron", "pomme de terre"],
+    "ingredientsDeBase": ["beurre", "farine", "sel"],
+    "etapes": [
+      "Cuire les pommes de terre à l'eau 15 minutes.",
+      "Fariner légèrement les filets de perche.",
+      "Les poêler 2 minutes par face dans le beurre.",
+      "Arroser de jus de citron au moment de servir."
+    ],
+    "tags": ["suisse romande", "poisson", "lac"],
+    "image": "images/filets-de-perche-au-citron.jpg"
+  },
+  {
+    "id": 11,
+    "nom": "Soupe de légumes",
+    "description": "Une soupe mixée pour recycler tous les légumes fatigués.",
+    "temps": 35,
+    "difficulte": "facile",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["carotte", "poireau", "pomme de terre", "oignon"],
+    "ingredientsDeBase": ["sel", "poivre", "eau"],
+    "etapes": [
+      "Éplucher et couper tous les légumes en morceaux.",
+      "Les couvrir d'eau et cuire 25 minutes.",
+      "Mixer finement et assaisonner."
+    ],
+    "tags": ["anti-gaspi", "végétarien", "hiver"],
+    "image": "images/soupe-de-legumes.jpg"
+  },
+  {
+    "id": 12,
+    "nom": "Quiche lorraine",
+    "description": "Une quiche dorée aux lardons pour le repas ou le pique-nique.",
+    "temps": 45,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": false,
+    "ingredients": ["pâte brisée", "lardons", "œuf", "crème", "fromage"],
+    "ingredientsDeBase": ["sel", "poivre"],
+    "etapes": [
+      "Préchauffer le four à 190 °C et étaler la pâte dans un moule.",
+      "Faire dorer les lardons à sec.",
+      "Battre les œufs avec la crème et le fromage.",
+      "Verser sur les lardons et cuire 30 minutes."
+    ],
+    "tags": ["four", "pique-nique"],
+    "image": "images/quiche-lorraine.jpg"
+  },
+  {
+    "id": 13,
+    "nom": "Chili sin carne",
+    "description": "Un chili végétarien aux haricots rouges, encore meilleur le lendemain.",
+    "temps": 35,
+    "difficulte": "facile",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["haricots rouges", "tomate", "oignon", "poivron", "maïs"],
+    "ingredientsDeBase": ["huile", "sel", "épices"],
+    "etapes": [
+      "Faire revenir l'oignon et le poivron 5 minutes.",
+      "Ajouter les tomates, les haricots égouttés et le maïs.",
+      "Épicer et laisser mijoter 20 minutes."
+    ],
+    "tags": ["végétarien", "mijoté", "batch cooking"],
+    "image": "images/chili-sin-carne.jpg"
+  },
+  {
+    "id": 14,
+    "nom": "Croque-monsieur",
+    "description": "Le sandwich chaud qui se fait avec trois fois rien.",
+    "temps": 10,
+    "difficulte": "facile",
+    "portions": 1,
+    "estVegetarien": false,
+    "ingredients": ["pain", "jambon", "fromage"],
+    "ingredientsDeBase": ["beurre"],
+    "etapes": [
+      "Beurrer les tranches de pain à l'extérieur.",
+      "Garnir de jambon et de fromage.",
+      "Dorer 3 minutes par face à la poêle."
+    ],
+    "tags": ["rapide", "étudiant"],
+    "image": "images/croque-monsieur.jpg"
+  },
+  {
+    "id": 15,
+    "nom": "Lentilles aux saucisses",
+    "description": "Un plat d'hiver nourrissant et bon marché.",
+    "temps": 40,
+    "difficulte": "facile",
+    "portions": 3,
+    "estVegetarien": false,
+    "ingredients": ["lentilles", "saucisse", "carotte", "oignon"],
+    "ingredientsDeBase": ["sel", "poivre", "eau"],
+    "etapes": [
+      "Faire revenir l'oignon et la carotte en rondelles.",
+      "Ajouter les lentilles et couvrir d'eau.",
+      "Cuire 25 minutes puis ajouter les saucisses 10 minutes."
+    ],
+    "tags": ["hiver", "petit budget"],
+    "image": "images/lentilles-aux-saucisses.jpg"
+  },
+  {
+    "id": 16,
+    "nom": "Salade de pâtes au thon",
+    "description": "Une salade froide à préparer la veille pour le lunch.",
+    "temps": 15,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": false,
+    "ingredients": ["pâtes", "thon", "tomate", "maïs"],
+    "ingredientsDeBase": ["huile", "sel", "vinaigre"],
+    "etapes": [
+      "Cuire les pâtes et les rincer à l'eau froide.",
+      "Ajouter le thon émietté, les tomates en dés et le maïs.",
+      "Assaisonner avec l'huile et le vinaigre."
+    ],
+    "tags": ["lunch", "froid", "étudiant"],
+    "image": "images/salade-de-pates-au-thon.jpg"
+  },
+  {
+    "id": 17,
+    "nom": "Risotto aux champignons",
+    "description": "Un risotto crémeux sans crème.",
+    "temps": 35,
+    "difficulte": "moyen",
+    "portions": 3,
+    "estVegetarien": true,
+    "ingredients": ["riz", "champignon", "oignon", "fromage"],
+    "ingredientsDeBase": ["huile", "sel", "bouillon"],
+    "etapes": [
+      "Faire revenir l'oignon et les champignons.",
+      "Ajouter le riz et le nacrer 2 minutes.",
+      "Mouiller de bouillon louche par louche pendant 18 minutes.",
+      "Hors du feu, ajouter le fromage râpé."
+    ],
+    "tags": ["végétarien", "italien", "réconfort"],
+    "image": "images/risotto-aux-champignons.jpg"
+  },
+  {
+    "id": 18,
+    "nom": "Gratin dauphinois",
+    "description": "Des pommes de terre fondantes à la crème.",
+    "temps": 70,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["pomme de terre", "crème", "lait", "ail"],
+    "ingredientsDeBase": ["sel", "poivre"],
+    "etapes": [
+      "Préchauffer le four à 180 °C et frotter le plat avec l'ail.",
+      "Couper les pommes de terre en fines rondelles.",
+      "Les disposer dans le plat et couvrir de lait et de crème.",
+      "Cuire 1 heure au four."
+    ],
+    "tags": ["four", "végétarien", "famille"],
+    "image": "images/gratin-dauphinois.jpg"
+  },
+  {
+    "id": 19,
+    "nom": "Wok de nouilles au poulet",
+    "description": "Des nouilles sautées en un seul ustensile.",
+    "temps": 20,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": false,
+    "ingredients": ["nouilles", "poulet", "carotte", "poivron"],
+    "ingredientsDeBase": ["huile", "sauce soja"],
+    "etapes": [
+      "Cuire les nouilles 4 minutes et les égoutter.",
+      "Saisir le poulet en lanières au wok.",
+      "Ajouter les légumes en julienne et sauter 4 minutes.",
+      "Ajouter les nouilles et la sauce soja."
+    ],
+    "tags": ["rapide", "asiatique"],
+    "image": "images/wok-de-nouilles-au-poulet.jpg"
+  },
+  {
+    "id": 20,
+    "nom": "Tarte aux poireaux",
+    "description": "Une tarte salée simple au poireau et au fromage.",
+    "temps": 45,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["pâte brisée", "poireau", "œuf", "crème", "fromage"],
+    "ingredientsDeBase": ["beurre", "sel"],
+    "etapes": [
+      "Préchauffer le four à 190 °C.",
+      "Faire fondre les poireaux émincés au beurre 10 minutes.",
+      "Mélanger les œufs, la crème et le fromage.",
+      "Garnir la pâte et cuire 30 minutes."
+    ],
+    "tags": ["four", "végétarien", "suisse romande"],
+    "image": "images/tarte-aux-poireaux.jpg"
+  },
+  {
+    "id": 21,
+    "nom": "Œufs brouillés aux épinards",
+    "description": "Un petit-déjeuner salé et vert en 8 minutes.",
+    "temps": 8,
+    "difficulte": "facile",
+    "portions": 1,
+    "estVegetarien": true,
+    "ingredients": ["œuf", "épinards", "pain"],
+    "ingredientsDeBase": ["beurre", "sel"],
+    "etapes": [
+      "Faire tomber les épinards dans le beurre 2 minutes.",
+      "Ajouter les œufs battus et remuer à feu doux.",
+      "Servir sur une tranche de pain grillé."
+    ],
+    "tags": ["rapide", "végétarien", "brunch"],
+    "image": "images/ufs-brouilles-aux-epinards.jpg"
+  },
+  {
+    "id": 22,
+    "nom": "Spaghetti carbonara",
+    "description": "La vraie carbonara, sans crème.",
+    "temps": 15,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": false,
+    "ingredients": ["pâtes", "lardons", "œuf", "fromage"],
+    "ingredientsDeBase": ["poivre", "sel"],
+    "etapes": [
+      "Cuire les pâtes.",
+      "Faire dorer les lardons à sec.",
+      "Battre les jaunes d'œufs avec le fromage râpé.",
+      "Hors du feu, mélanger pâtes, lardons et œufs avec un peu d'eau de cuisson."
+    ],
+    "tags": ["rapide", "italien", "étudiant"],
+    "image": "images/spaghetti-carbonara.jpg"
+  },
+  {
+    "id": 23,
+    "nom": "Curry de pois chiches",
+    "description": "Un curry doux au lait de coco, prêt en 25 minutes.",
+    "temps": 25,
+    "difficulte": "facile",
+    "portions": 3,
+    "estVegetarien": true,
+    "ingredients": ["pois chiches", "lait de coco", "tomate", "oignon", "riz"],
+    "ingredientsDeBase": ["huile", "sel", "épices"],
+    "etapes": [
+      "Cuire le riz.",
+      "Faire revenir l'oignon avec les épices.",
+      "Ajouter tomates, pois chiches et lait de coco.",
+      "Laisser mijoter 15 minutes et servir avec le riz."
+    ],
+    "tags": ["végétarien", "épicé", "batch cooking"],
+    "image": "images/curry-de-pois-chiches.jpg"
+  },
+  {
+    "id": 24,
+    "nom": "Malakoffs",
+    "description": "Les beignets de fromage de la région de Nyon.",
+    "temps": 30,
+    "difficulte": "difficile",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["fromage", "pain", "œuf", "vin blanc"],
+    "ingredientsDeBase": ["huile", "farine", "poivre"],
+    "etapes": [
+      "Mélanger le fromage râpé, l'œuf, la farine et le vin blanc.",
+      "Étaler la pâte sur des tranches de pain.",
+      "Frire dans l'huile chaude, fromage vers le bas, 2 minutes.",
+      "Égoutter sur du papier absorbant."
+    ],
+    "tags": ["suisse romande", "terroir", "friture"],
+    "image": "images/malakoffs.jpg"
+  },
+  {
+    "id": 25,
+    "nom": "Hachis parmentier",
+    "description": "La purée gratinée qui recycle un reste de viande.",
+    "temps": 50,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": false,
+    "ingredients": ["viande hachée", "pomme de terre", "oignon", "lait", "fromage"],
+    "ingredientsDeBase": ["beurre", "sel", "poivre"],
+    "etapes": [
+      "Cuire les pommes de terre et les écraser avec le lait et le beurre.",
+      "Faire revenir la viande avec l'oignon.",
+      "Étaler la viande dans un plat et couvrir de purée.",
+      "Parsemer de fromage et gratiner 20 minutes à 200 °C."
+    ],
+    "tags": ["four", "anti-gaspi", "famille"],
+    "image": "images/hachis-parmentier.jpg"
+  },
+  {
+    "id": 26,
+    "nom": "Bolognaise",
+    "description": "La sauce à la viande qui se congèle très bien.",
+    "temps": 45,
+    "difficulte": "facile",
+    "portions": 4,
+    "estVegetarien": false,
+    "ingredients": ["pâtes", "viande hachée", "tomate", "oignon", "carotte"],
+    "ingredientsDeBase": ["huile", "sel", "poivre"],
+    "etapes": [
+      "Faire revenir l'oignon et la carotte hachés.",
+      "Ajouter la viande et la faire dorer.",
+      "Ajouter les tomates et mijoter 30 minutes.",
+      "Servir sur les pâtes."
+    ],
+    "tags": ["mijoté", "batch cooking", "italien"],
+    "image": "images/bolognaise.jpg"
+  },
+  {
+    "id": 27,
+    "nom": "Fondue moitié-moitié",
+    "description": "La fondue fribourgeoise au gruyère et au vacherin.",
+    "temps": 25,
+    "difficulte": "moyen",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["gruyère", "vacherin fribourgeois", "vin blanc", "ail", "pain"],
+    "ingredientsDeBase": ["maïzena", "poivre"],
+    "etapes": [
+      "Frotter le caquelon avec l'ail.",
+      "Chauffer le vin blanc puis ajouter les fromages râpés.",
+      "Remuer en huit jusqu'à ce que ce soit lisse, lier avec la maïzena.",
+      "Servir avec le pain coupé en cubes."
+    ],
+    "tags": ["suisse romande", "hiver", "convivial"],
+    "image": "images/fondue-moitie-moitie.jpg"
+  },
+  {
+    "id": 28,
+    "nom": "Galettes de courgette",
+    "description": "Des galettes croustillantes pour finir les courgettes.",
+    "temps": 25,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["courgette", "œuf", "fromage"],
+    "ingredientsDeBase": ["farine", "huile", "sel"],
+    "etapes": [
+      "Râper la courgette et la presser pour enlever l'eau.",
+      "Mélanger avec l'œuf, le fromage et la farine.",
+      "Cuire des petites galettes 3 minutes par face."
+    ],
+    "tags": ["anti-gaspi", "végétarien", "été"],
+    "image": "images/galettes-de-courgette.jpg"
+  },
+  {
+    "id": 29,
+    "nom": "Pain perdu",
+    "description": "Le dessert anti-gaspi par excellence.",
+    "temps": 15,
+    "difficulte": "facile",
+    "portions": 2,
+    "estVegetarien": true,
+    "ingredients": ["pain", "lait", "œuf"],
+    "ingredientsDeBase": ["sucre", "beurre"],
+    "etapes": [
+      "Battre les œufs avec le lait et le sucre.",
+      "Tremper les tranches de pain rassis.",
+      "Dorer au beurre 2 minutes par face."
+    ],
+    "tags": ["dessert", "anti-gaspi", "végétarien"],
+    "image": "images/pain-perdu.jpg"
+  },
+  {
+    "id": 30,
+    "nom": "Tarte au vin cuit",
+    "description": "La tarte vaudoise des fêtes, simple et sucrée.",
+    "temps": 45,
+    "difficulte": "moyen",
+    "portions": 6,
+    "estVegetarien": true,
+    "ingredients": ["pâte brisée", "vin cuit", "crème", "œuf"],
+    "ingredientsDeBase": ["sucre", "farine"],
+    "etapes": [
+      "Préchauffer le four à 200 °C et foncer le moule.",
+      "Mélanger le vin cuit, la crème, l'œuf, le sucre et la farine.",
+      "Verser sur la pâte et cuire 30 minutes."
+    ],
+    "tags": ["dessert", "suisse romande", "terroir"],
+    "image": "images/tarte-au-vin-cuit.jpg"
+  },
+  {
+    "id": 31,
+    "nom": "Banana bread",
+    "description": "Un cake moelleux pour les bananes trop mûres.",
+    "temps": 60,
+    "difficulte": "facile",
+    "portions": 6,
+    "estVegetarien": true,
+    "ingredients": ["banane", "œuf", "beurre"],
+    "ingredientsDeBase": ["farine", "sucre", "levure"],
+    "etapes": [
+      "Préchauffer le four à 180 °C.",
+      "Écraser les bananes et les mélanger avec l'œuf et le beurre fondu.",
+      "Ajouter la farine, le sucre et la levure.",
+      "Cuire 45 minutes dans un moule à cake."
+    ],
+    "tags": ["dessert", "anti-gaspi", "four"],
+    "image": "images/banana-bread.jpg"
+  },
+  {
+    "id": 32,
+    "nom": "Compote de pommes",
+    "description": "Des pommes abîmées transformées en compote maison.",
+    "temps": 25,
+    "difficulte": "facile",
+    "portions": 4,
+    "estVegetarien": true,
+    "ingredients": ["pomme", "citron"],
+    "ingredientsDeBase": ["sucre", "eau"],
+    "etapes": [
+      "Éplucher et couper les pommes en morceaux.",
+      "Les cuire 20 minutes avec un fond d'eau, le sucre et le jus de citron.",
+      "Écraser à la fourchette ou mixer."
+    ],
+    "tags": ["dessert", "anti-gaspi", "végétarien"],
+    "image": "images/compote-de-pommes.jpg"
   }
 ]
